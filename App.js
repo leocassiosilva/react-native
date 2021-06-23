@@ -15,7 +15,19 @@ export default function App() {
           </View>
       </View>
       <View style={styles.central}>
-          <Text>central</Text>
+        <View style={styles.box_central}>
+            <View style={styles.box_central_dentro}><Text>1</Text></View>
+            <View style={styles.box_central_dentro}><Text>2</Text></View>
+            <View style={styles.box_central_dentro}><Text>4</Text></View>
+        </View>
+        <View style={styles.box_central}>
+            <View style={styles.box_central_dentro1}><Text>1</Text></View>
+            <View style={styles.box_central_dentro1}><Text>2</Text></View>
+            <View style={styles.box_central_dentro1}><Text>4</Text></View>
+        </View>
+        <View>
+          <Text style={styles.box_central}>3</Text>
+        </View>
 		  </View>
 
       <View style={styles.footer}>
@@ -32,12 +44,46 @@ const styles = StyleSheet.create({
     flexDirection:"column"
   },
 
+  central: {
+    flex: 0.6,
+    backgroundColor: '#E5E5E5',
+    justifyContent:'space-between',
+    alignItems:'center'
+  },
+
+  box_central:{
+    width: 230,
+    height: 124,
+    backgroundColor: '#B2B9FF',
+    justifyContent: 'space-between',
+    margin: 10,
+    flexDirection:"row"
+	},
+
+  box_central_dentro:{
+    width: 45,
+    height: 106,
+    backgroundColor: 'red',
+		margin: 10,
+	},
+
+  box_central_dentro1:{
+    width: 209,
+    height: 31,
+    backgroundColor: 'red',
+		margin: 10,
+    flexDirection:"row"
+	},
+
+  
+
+
   header: {
     flexDirection:'row',
-    flex: 0.2,
-    backgroundColor: 'yellow',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 0.145,
+    backgroundColor: '#C4C4C4',
+    justifyContent: 'space-between',
+    alignItems: 'baseline',
   },
 
   box:{
@@ -56,10 +102,6 @@ const styles = StyleSheet.create({
     fontSize: 40,
   },
 
-  central: {
-    flex: 0.6,
-    backgroundColor: 'red',
-  },
 
   footer: {
     flex: 0.2,
