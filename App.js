@@ -20,7 +20,7 @@ export default function App() {
             <View style={styles.box_central_dentro}><Text>2</Text></View>
             <View style={styles.box_central_dentro}><Text>4</Text></View>
         </View>
-        <View style={styles.box_central}>
+        <View style={styles.box_central1}>
             <View style={styles.box_central_dentro1}><Text>1</Text></View>
             <View style={styles.box_central_dentro1}><Text>2</Text></View>
             <View style={styles.box_central_dentro1}><Text>4</Text></View>
@@ -67,6 +67,13 @@ const styles = StyleSheet.create({
 		margin: 10,
 	},
 
+  box_central1:{
+    width: 230,
+    height: 124,
+    backgroundColor: '#B2B9FF',
+    justifyContent: 'space-between',
+	},
+  
   box_central_dentro1:{
     width: 209,
     height: 31,
