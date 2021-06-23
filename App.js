@@ -8,10 +8,13 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.header}>
           <View style={styles.box}>
+            <Text style={styles.text_header}>Menu</Text>
           </View>
           <View style={styles.box}>
+          <Text style={styles.text_header}>Logs</Text>
           </View>
           <View style={styles.box}>
+          <Text style={styles.text_header}>Credits</Text>
           </View>
       </View>
       <View style={styles.central}>
@@ -45,7 +48,7 @@ export default function App() {
 		  </View>
 
       <View style={styles.footer}>
-          <Text>footer</Text>
+          <Text style={styles.text_footer}>Exercício 01 - DDM</Text>
 		  </View>
     </View>
   )
@@ -60,9 +63,9 @@ const styles = StyleSheet.create({
 
   //Flex do centro
   central: {
-    flex: 0.6,
+    flex: 0.8,
     backgroundColor: '#E5E5E5',
-    justifyContent:'space-between',
+    justifyContent:'space-evenly',
     alignItems:'center'
   },
 
@@ -82,6 +85,23 @@ const styles = StyleSheet.create({
 		margin: 10,
 	},
 
+    //central 1
+  box_central1:{
+    width: 230,
+    height: 124,
+    backgroundColor: '#B2B9FF',
+    justifyContent: 'space-evenly',
+    margin: 10,
+	},
+  
+  box_central_dentro1:{
+    width: 209,
+    height: 31,
+    backgroundColor: 'red',
+		margin: 10,
+	},
+  
+  //Fim do Centro 1
 
   //central 2
   box_central2:{
@@ -100,28 +120,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
 		margin: 5,
 	},
+  //fim central 2 
 
-
-
-
-    //central 1
-  box_central1:{
-    width: 230,
-    height: 124,
-    backgroundColor: '#B2B9FF',
-    justifyContent: 'space-evenly',
-    margin: 10,
-	},
   
-  box_central_dentro1:{
-    width: 209,
-    height: 31,
-    backgroundColor: 'red',
-		margin: 10,
-	},
-
-  //Fim do Centro 
-
 
   header: {
     flexDirection:'row',
@@ -129,6 +130,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#C4C4C4',
     justifyContent: 'space-between',
     alignItems: 'baseline',
+  },
+
+  text_header: {
+    color: 'white',
+    fontSize: 15,
+    textAlign:'center'
   },
 
   box:{
@@ -142,14 +149,19 @@ const styles = StyleSheet.create({
 		margin: 10,
 	},
 
-  text: {
-    color: 'black',
-    fontSize: 40,
+  text_footer: {
+    color: 'white',
+    fontSize: 30,
+    textAlign:'center'
   },
 
 
   footer: {
-    flex: 0.2,
-    backgroundColor: 'blue',
+    flexDirection:'row',
+    flex: 0.145,
+    backgroundColor: '#4E466A',
+    alignItems:'center',
+    justifyContent: 'center',
+
   } 
 });
